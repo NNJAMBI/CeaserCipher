@@ -6,6 +6,11 @@ public class DecodingTest {
 
     @Test
     public void checkIfSavesInputText() {
-        assertArrayEquals("PCPEA MCTCPLC", testDecoding.getInputText());
+        assertEquals("PCPEA MCTCPLC", testDecoding.getInputText());
+    }
+
+    @Test
+    public void checkKeyIsSaved() {
+        assertEquals(2, testDecoding.getKey());
     }
 }

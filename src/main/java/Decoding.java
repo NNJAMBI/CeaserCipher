@@ -6,5 +6,11 @@ public class Decoding {
         mKey = key;
         mInputText = inputText;
     }
+    public String getInputText() {
+        return mInputText;
+    }
+    public int getKey() {
+        return mKey;
+    }
 
 }
