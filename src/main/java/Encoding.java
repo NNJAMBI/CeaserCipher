@@ -11,4 +11,8 @@ public class Encoding {
         return mInputText;
     }
 
+    //create a getter method and check if key is saved
+    public int getKey() {
+        return mKey;
+    }
 }
