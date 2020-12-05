@@ -1,11 +1,25 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.io.Console;
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println( "Please select an action; Encode, Decode or Exit");
-        String choice = scanner.next();
-        scanner.next();
+        System.out.println( "Please select an action; 1. Encode, 2. Decode or 3. Exit");
+        int choice = scanner.nextInt();
+        scanner.nextLine();
+
+        if(choice == 1) {
+            System.out.println("Enter a text");
+            String inputText = scanner.nextLine().toUpperCase();
+            System.out.println("Enter a key");
+            int key = scanner.nextInt();
+            Encoding encoding = new Encoding(inputText,key);
+            System.out.println(String.format("Your encryted text is: %s",encoding.encode()));
+        }
     }
 }
