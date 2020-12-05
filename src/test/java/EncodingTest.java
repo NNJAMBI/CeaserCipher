@@ -34,6 +34,12 @@ public class EncodingTest {
     public void isValidKey() {
         assertEquals(true, testEncoding.isValidKey());
     }
+
+    @Test
+    public void validEncoding()
+    {
+        assertEquals("PCPEA MCTCPLC", testEncoding.encode());
+    }
 }
 
 

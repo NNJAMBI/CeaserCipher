@@ -37,4 +37,22 @@ public class Encoding {
         return mKey >1 && mKey < 26;
       }
 
-}
+      public String encode() {
+        String encoded = "";
+        String encodedArray[] = mInputText.split("");
+        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        for (int i = 0; i<encodedArray.length; i++) {
+            if (mInputText.charAt(i) == ' ') {
+                encoded += " ";}
+                    else {
+                        int charPosition = alphabet.indexOf(mInputText.charAt(i));
+                        int key = (mKey + charPosition) % 26;
+                        encoded += alphabet.charAt(key);
+                    }
+                }
+                return encoded.toUpperCase();
+            }
+        }
+
+
+
