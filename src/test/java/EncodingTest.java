@@ -19,6 +19,21 @@ public class EncodingTest {
     public void checkIfKeyIsSaved() {
         assertEquals(2, testEncoding.getKey());
     }
+
+    @Test
+    public void isNotEmpty() {
+        assertEquals(true, testEncoding.isNotEmpty());
+    }
+
+    @Test
+    public void isValidInputText() {
+        assertEquals(true, testEncoding.isValidInputText());
+    }
+
+    @Test
+    public void isValidKey() {
+        assertEquals(true, testEncoding.isValidKey());
+    }
 }
 
 
