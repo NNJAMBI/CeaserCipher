@@ -5,4 +5,9 @@ public class Encoding {
         mKey = key;
         mInputText = inputText;
     }
+    //create a getter method
+    public String getInputText(){
+        return mInputText;
+    }
+
 }

@@ -10,6 +10,7 @@ public class EncodingTest {
 
     @Test
     public void checkIfSavedInputText() {
-        assertEquals("NANCY NJAMBI", testEncoding.getInputText());
+        Encoding testEncoding = new Encoding("NANCY KARANJA", 2);
+        assertEquals("NANCY KARANJA", testEncoding.getInputText());
     }
 }
