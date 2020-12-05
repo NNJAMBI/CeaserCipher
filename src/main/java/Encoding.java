@@ -37,6 +37,8 @@ public class Encoding {
         return mKey >1 && mKey < 26;
       }
 
+
+      //encoding logic
       public String encode() {
         String encoded = "";
         String encodedArray[] = mInputText.split("");
