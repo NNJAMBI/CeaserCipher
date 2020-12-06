@@ -22,6 +22,9 @@ To access this project, you will need to access it from github.
 2. Compile  `gradle compileJava`
 3. Run cd to cd build/classes/main then run `java App`
 
+## Prerequisites
+- Java 11
+- Gradle 6.7.1
 
 ## link to live site on GitHub Pages
 
